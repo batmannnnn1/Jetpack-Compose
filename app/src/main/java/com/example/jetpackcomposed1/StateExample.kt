@@ -88,6 +88,8 @@ The state change is triggered in NotificationCounter, but the actual state is up
 (which is passed down from the Parent ) -> Parent composable defines the increment Function and the child composable just accept this function...
 so the state updates in the parent composable and then parent send the data to the child composable 
 
+if you don't use higher Order Function in child then it will break the Unidirectional law...
+
 State flows downward: state.intValue is passed to both NotificationCounter (to display the current count) and MessageBar (to display the message count).
 Events flow upward: When the button in NotificationCounter is clicked, it calls the increment function, which modifies the state.intValue in the parent composable (NotificationScreen).
 
