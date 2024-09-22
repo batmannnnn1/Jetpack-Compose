@@ -1,0 +1,14 @@
+when you wanna use the functionality for composable but they didn't available in composable arguments...
+then we'll use the Modifiers it's class provide the methods like padding , backgroundColour and many more...
+these methods are not available in composable argument so we use the dependency of modifier..
+this is possible because jetpack compose use composition over inheritance...
+
+             ***NOTE:
+
+ the order in which you chain modifiers can significantly affect the behavior and appearance of the UI components.
+ Modifiers in Compose are applied sequentially, so each modifier can build on or change what previous modifiers have done. If you don’t apply them in the correct order, it can lead to unintended results.
+
+  Why Modifier Order Matters ?
+
+  Modifiers are processed in the order they are written.
+  Each modifier affects the size, position, or appearance of the element, and subsequent modifiers operate on the output of the previous one.
